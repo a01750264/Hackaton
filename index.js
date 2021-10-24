@@ -2,7 +2,7 @@ const express = require('express');
 const path = require('path');
 const bodyParser = require('body-parser');
 const app = express();
-const puerto = 8080;
+const puerto = 80;
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.get('/dashboard', (req, res)=>{
